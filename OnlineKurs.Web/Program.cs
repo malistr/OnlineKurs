@@ -17,7 +17,6 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
         options.LoginPath = "/Admin/Login/Index";
         options.LogoutPath = "/Admin/Login/Logout";
         options.AccessDeniedPath = "/Admin/Login/AccessDenied";
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
     });
 
 
@@ -36,6 +35,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

@@ -2,7 +2,7 @@
 
 namespace OnlineKurs.Web.Areas.Admin.Controllers
 {
-    public class CourseController : Controller
+    public class CourseController : ControllerBase
     {
         public IActionResult Index()
         {
