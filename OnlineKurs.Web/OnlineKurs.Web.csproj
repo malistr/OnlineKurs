@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnlineKurs.Data\OnlineKurs.Data.csproj" />
+    <ProjectReference Include="..\OnlineKurs.Repository\OnlineKurs.Repository.csproj" />
   </ItemGroup>
 
 </Project>
