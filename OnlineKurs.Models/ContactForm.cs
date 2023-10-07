@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OnlineKurs.Models
+{
+    [Table("ContactForms")]
+
+    public class ContactForm : BaseModel
+    {
+        public string? Email { get; set; }
+        public string? Phone { get; set; }
+        public string? Subject { get; set; }
+        [MaxLength(100)]
+        public string Message { get; set; }
+    }
+}
