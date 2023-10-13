@@ -14,13 +14,12 @@ namespace OnlineKurs.Models
         [MaxLength(25)]
         public string Name { get; set; }
         [MaxLength(100)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
         public bool IsActive { get; set; } = true;
-      
         public bool IsDeleted { get; set; } = false;
         public DateTime DateCreated { get; set; } = DateTime.Now;
         public DateTime? ModifiedDate { get; set; } = DateTime.Now;
-        public DateTime? DateDeleted { get; set; }
+       
 
     }
 }
